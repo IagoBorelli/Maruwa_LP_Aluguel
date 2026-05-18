@@ -1,0 +1,233 @@
+ body {
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        .glass-overlay {
+
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .glass-card-dark {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-card-light {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-premium {
+            background-color: #CF753E;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        .btn-premium::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background-color: #603A2E;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            z-index: -1;
+        }
+
+        .btn-premium:hover::after {
+            height: 100%;
+        }
+
+        .btn-premium:hover {
+            box-shadow: 0 10px 30px rgba(207, 117, 62, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .accordion-content {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 20px !important;
+            color: #CF753E;
+            font-weight: bold;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background: rgba(255, 255, 255, 0.8);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background: #CF753E;
+        }
+
+        .swiper-button-next:hover::after,
+        .swiper-button-prev:hover::after {
+            color: #FFF;
+        }
+
+        .swiper-pagination-bullet {
+            background: #824E3D !important;
+            opacity: 0.3 !important;
+            width: 8px !important;
+            height: 8px !important;
+            transition: all 0.4s ease !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #CF753E !important;
+            opacity: 1 !important;
+            transform: scale(1.5) !important;
+        }
+
+        .property-swiper-container {
+            padding-bottom: 3.5rem !important;
+        }
+
+        .property-swiper-container .swiper-pagination {
+            bottom: 0 !important;
+        }
+
+        .modalSwiper .swiper-pagination-bullet {
+            background: #FFFFFF !important;
+        }
+
+        .modalSwiper .swiper-pagination-bullet-active {
+            background: #CF753E !important;
+        }
+
+        .modalSwiper .swiper-button-next,
+        .modalSwiper .swiper-button-prev {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .modalSwiper .swiper-button-next:hover,
+        .modalSwiper .swiper-button-prev:hover {
+            background: #CF753E;
+            border-color: #CF753E;
+        }
+
+        .modalSwiper .swiper-button-next::after,
+        .modalSwiper .swiper-button-prev::after {
+            display: none !important;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .cursor-blink {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+
+        .animate-pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .will-change-transform {
+            will-change: transform, opacity;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f9f9f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #CF753E;
+            border-radius: 4px;
+        }
+
+        .fade-mask {
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+
+        .badges-marquee-track {
+            display: flex;
+            width: max-content;
+            animation: marquee 25s linear infinite;
+        }
+
+        .badges-marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        .mobileExpSwiper .swiper-slide .mobile-card-anim {
+            transform: scale(0.88);
+            opacity: 0.4;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobileExpSwiper .swiper-slide-active .mobile-card-anim {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes scrolldown {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }

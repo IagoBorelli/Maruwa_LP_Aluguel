@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruwá | O Extraordinário no Litoral Norte</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwindconfig.js"></script>
+
+</head>
+
+<body class="font-sans text-marrom antialiased selection:bg-bronze selection:text-white">
+
+    <section id="hero" class="relative h-screen w-full overflow-hidden flex items-center justify-center bg-black">
+
+        <div class="absolute inset-0 z-0 h-full w-full bg-black">
+            <video id="media-1" autoplay loop muted playsinline poster="assets/villa mare/vila-mare01.webp"
+                class="hero-media absolute inset-0 w-full h-full object-cover will-change-transform scale-100"
+                style="opacity: 1; filter: brightness(1) saturate(1);">
+                <source src="assets/HEAD.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="absolute inset-0 z-[5] bg-black/50 mix-blend-multiply"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl will-change-transform flex flex-col items-center justify-center"
+            id="hero-content">
+            <h1
+                class="hero-anim text-5xl md:text-7xl lg:text-8xl text-white mb-6 font-serif leading-tight drop-shadow-lg">
+                Hospedagens Boutique <br> <i class="text-bronze font-light">à beira-mar</i>
+            </h1>
+            <p
+                class="hero-anim text-sm md:text-lg text-white/90 mb-10 font-light tracking-wide max-w-2xl mx-auto min-h-[60px] md:min-h-[80px]">
+                <span id="typing-text"></span><span class="cursor-blink font-bold text-bronze ml-1"
+                    id="typing-cursor">|</span>
+            </p>
+
+            <a href="#reserva"
+                class="hero-anim inline-block btn-premium px-10 py-4 text-white uppercase tracking-[0.2em] text-xs font-semibold rounded-sm shadow-2xl rounded-xl">
+                Reservar agora
+            </a>
+        </div>
+
+        <div
+            class="scroll-indicator absolute bottom-16  -translate-x-1/2 flex flex-col items-center gap-3 z-10 animate-pulse-glow">
+            <span class="text-white text-[10px] tracking-[0.3em] uppercase pl-[0.3em] opacity-90 drop-shadow-md">Scroll
+                Sequence</span>
+            <div class="w-[1px] h-12 bg-white/30 relative overflow-hidden">
+                <div
+                    class="w-full h-full bg-bronze absolute top-0 -translate-y-full animate-[scrolldown_2s_ease-in-out_infinite]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="imoveis" class="py-32 bg-white overflow-hidden relative">
+        <div class="container mx-auto px-6 mb-16 text-center gs-reveal">
+            <span class="text-bronze uppercase tracking-[0.3em] text-xs font-bold block mb-4">Portfólio Exclusivo</span>
+            <h2 class="text-4xl md:text-6xl font-serif text-marrom">Destaques Premium</h2>
+            <div class="w-16 h-[1px] bg-bronze mx-auto mt-8"></div>
+        </div>
+
+        <div class="relative max-w-[1600px] mx-auto">
+            <div class="swiper propertySwiper px-0 md:px-15 gs-reveal property-swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide group cursor-pointer" onclick="openPropertyModal('Villa Maré', 'Praia do Forte – Bahia', 'Sinta a brisa do oceano em um refúgio de sofisticação absoluta na Praia do Forte. A Villa Maré une a arquitetura moderna à serenidade do mar. Desfrutede mergulhos privativos e celebrações memoráveis com o padrão de hospitalidade de luxo que só a Maruwá oferece. Seu paraíso particular.', [
+                            'assets/villa mare/vila-mare01.webp',
+                            'assets/villa mare/vila-mare02.webp',
+                            'assets/villa mare/vila-mare03.webp',
+                            'assets/villa mare/vila-mare04.webp',
+                            'assets/villa mare/vila-mare05.webp',
+                            'assets/villa mare/vila-mare06.webp',
+                            'assets/villa mare/vila-mare07.webp',
+                            'assets/villa mare/vila-mare08.webp',
+                            'assets/villa mare/vila-mare09.webp',
+                            'assets/villa mare/vila-mare10.webp',
+                            'assets/villa mare/vila-mare11.webp',
+                            'assets/villa mare/vila-mare12.webp',
+                            'assets/villa mare/vila-mare13.webp',
+                            'assets/villa mare/vila-mare14.webp',
+                            'assets/villa mare/vila-mare15.webp',
+                            'assets/villa mare/vila-mare16.webp',
+                            'assets/villa mare/vila-mare17.webp',
+                            'assets/villa mare/vila-mare18.webp',
+                            'assets/villa mare/vila-mare19.webp',
+                            'assets/villa mare/vila-mare20.webp',
+                            'assets/villa mare/vila-mare21.webp',
+                            'assets/villa mare/vila-mare22.webp',
+                            'assets/villa mare/vila-mare23.webp',
+                            'assets/villa mare/vila-mare24.webp',
+                            'assets/villa mare/vila-mare25.webp'
+                            
+                        ])">
+                        <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-sm mx-4 md:mx-0 rounded-xl">
+                            <img src="assets/villa mare/vila-mare01.webp"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-marrom/90 via-transparent to-transparent">
+                            </div>
+
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 p-8 text-white w-full glass-overlay translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="text-bronze uppercase text-[10px] font-bold tracking-[0.2em]">Praia do
+                                    Forte – Bahia</span>
+                                <h3 class="text-2xl md:text-3xl font-serif mt-2 mb-2">Villa Maré</h3>
+                                <p
+                                    class="text-xs md:text-sm text-white/80 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    Villa Boutique à Beira-Mar – 7 Suítes – Acomoda até 15 pessoas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide group cursor-pointer" onclick="openPropertyModal('Villa Arena Chinesa', 'Guarajuba – Bahia', 'Redefina o conceito de exclusividade em um santuário à beira-mar de Guarajuba. Da borda infinita ao serviço de staff impecável, cada instante é um verdadeiro tributo ao alto luxo. Entre o oceano e o conforto absoluto, viva a experiência Maruwá em um refúgio onde privacidade e requinte se encontram. ', [
+                            'assets/villa arena chinesa/villa-arena-chinesa01.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa02.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa03.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa04.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa05.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa06.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa07.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa08.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa09.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa10.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa11.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa12.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa13.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa14.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa15.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa16.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa17.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa18.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa19.webp', 
+                            'assets/villa arena chinesa/villa-arena-chinesa20.webp', 
+                            
+                        ])">
+                        <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-sm mx-4 md:mx-0 rounded-xl">
+                            <img src="assets/villa arena chinesa/villa-arena-chinesa01.webp"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-marrom/90 via-transparent to-transparent">
+                            </div>
+
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 p-8 text-white w-full glass-overlay translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="text-bronze uppercase text-[10px] font-bold tracking-[0.2em]">Guarajuba –
+                                    Bahia</span>
+                                <h3 class="text-2xl md:text-3xl font-serif mt-2 mb-2">Villa Arena Chinesa</h3>
+                                <p
+                                    class="text-xs md:text-sm text-white/80 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    Villa Boutique pé na areia – 9 Suítes – Acomoda até 20 pessoas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide group cursor-pointer" onclick="openPropertyModal('Villa Corais', 'Guarajuba – Bahia', 'A Villa Corais é o cenário perfeito para quem busca amplitude e exclusividade pé na areia. Entre mergulhos na hidromassagem e a vista privilegiada dos corais, desfrute de um refúgio de puro requinte. Um convite da Maruwá para viver momentos inesquecíveis com o máximo conforto e privacidade.', [
+                            'assets/villa corais/villa-corais01.webp', 
+                            'assets/villa corais/villa-corais02.webp', 
+                            'assets/villa corais/villa-corais03.webp', 
+                            'assets/villa corais/villa-corais04.webp', 
+                            'assets/villa corais/villa-corais05.webp', 
+                            'assets/villa corais/villa-corais06.webp', 
+                            'assets/villa corais/villa-corais07.webp', 
+                            'assets/villa corais/villa-corais08.webp', 
+                            'assets/villa corais/villa-corais09.webp', 
+                            'assets/villa corais/villa-corais10.webp', 
+                            'assets/villa corais/villa-corais11.webp', 
+                            'assets/villa corais/villa-corais12.webp', 
+                            'assets/villa corais/villa-corais13.webp', 
+                            'assets/villa corais/villa-corais14.webp', 
+                            'assets/villa corais/villa-corais15.webp', 
+                            'assets/villa corais/villa-corais16.webp', 
+                            'assets/villa corais/villa-corais17.webp', 
+                            'assets/villa corais/villa-corais18.webp', 
+                            'assets/villa corais/villa-corais19.webp', 
+                            'assets/villa corais/villa-corais20.webp', 
+                            'assets/villa corais/villa-corais21.webp', 
+                            'assets/villa corais/villa-corais22.webp', 
+                            'assets/villa corais/villa-corais23.webp', 
+                            'assets/villa corais/villa-corais24.webp', 
+                            'assets/villa corais/villa-corais25.webp'
+                            
+                        ])">
+                        <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-sm mx-4 md:mx-0 rounded-xl">
+                            <img src="assets/villa corais/villa-corais01.webp"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-marrom/90 via-transparent to-transparent">
+                            </div>
+
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 p-8 text-white w-full glass-overlay translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="text-bronze uppercase text-[10px] font-bold tracking-[0.2em]">Guarajuba –
+                                    Bahia</span>
+                                <h3 class="text-2xl md:text-3xl font-serif mt-2 mb-2">Villa Corais</h3>
+                                <p
+                                    class="text-xs md:text-sm text-white/80 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    Villa Boutique pé na areia – 7 Suítes – Acomoda até 28 pessoas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide group cursor-pointer" onclick="openPropertyModal('Villa Esmeralda', 'Guarajuba – Bahia', 'Descubra um refúgio de serenidade onde o luxo encontra a natureza. Relaxe em uma piscina iluminada com vista para o coqueiral e desfrute de suítes amplas e acolhedoras. Na Villa Esmeralda, a Maruwá entrega exclusividade e conforto absoluto para transformar sua estadia em um evento único.', [
+                            'assets/villa esmeralda/vila-esmeralda01.webp', 
+                            'assets/villa esmeralda/vila-esmeralda02.webp', 
+                            'assets/villa esmeralda/vila-esmeralda03.webp', 
+                            'assets/villa esmeralda/vila-esmeralda04.webp', 
+                            'assets/villa esmeralda/vila-esmeralda05.webp', 
+                            'assets/villa esmeralda/vila-esmeralda06.webp', 
+                            'assets/villa esmeralda/vila-esmeralda07.webp', 
+                            'assets/villa esmeralda/vila-esmeralda08.webp', 
+                            'assets/villa esmeralda/vila-esmeralda09.webp', 
+                            'assets/villa esmeralda/vila-esmeralda10.webp', 
+                            'assets/villa esmeralda/vila-esmeralda11.webp', 
+                            'assets/villa esmeralda/vila-esmeralda12.webp', 
+                            'assets/villa esmeralda/vila-esmeralda13.webp', 
+                            'assets/villa esmeralda/vila-esmeralda14.webp', 
+                            'assets/villa esmeralda/vila-esmeralda15.webp', 
+                            'assets/villa esmeralda/vila-esmeralda16.webp', 
+                            'assets/villa esmeralda/vila-esmeralda17.webp', 
+                            'assets/villa esmeralda/vila-esmeralda18.webp', 
+                            'assets/villa esmeralda/vila-esmeralda19.webp', 
+                            'assets/villa esmeralda/vila-esmeralda20.webp', 
+                            'assets/villa esmeralda/vila-esmeralda21.webp' 
+                            
+                            
+                        ])">
+                        <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-sm mx-4 md:mx-0 rounded-xl">
+                            <img src="assets/villa esmeralda/vila-esmeralda01.webp"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-marrom/90 via-transparent to-transparent">
+                            </div>
+
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 p-8 text-white w-full glass-overlay translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="text-bronze uppercase text-[10px] font-bold tracking-[0.2em]">Guarajuba –
+                                    Bahia</span>
+                                <h3 class="text-2xl md:text-3xl font-serif mt-2 mb-2">Villa Esmeralda</h3>
+                                <p
+                                    class="text-xs md:text-sm text-white/80 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    Villa Boutique pé na areia – 6 Suítes – Acomoda até 25 pessoas
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide group cursor-pointer" onclick="openPropertyModal('Villa Palmier', 'Praia do Forte – Bahia', 'Desacelere em um refúgio onde a elegância encontra o afeto. Na Villa Palmier, a sofisticação se traduz em brisa, jardins e um serviço impecável, que cuida de tudo para que você apenas sinta. Viva a exclusividade Maruwá em uma arquitetura leve, desenhada para criar conexões e memórias eternas.', [
+                            'assets/villa palmares/villa-palmares01.webp', 
+                            'assets/villa palmares/villa-palmares02.webp', 
+                            'assets/villa palmares/villa-palmares03.webp', 
+                            'assets/villa palmares/villa-palmares04.webp', 
+                            'assets/villa palmares/villa-palmares05.webp', 
+                            'assets/villa palmares/villa-palmares06.webp', 
+                            'assets/villa palmares/villa-palmares07.webp', 
+                            'assets/villa palmares/villa-palmares08.webp', 
+                            'assets/villa palmares/villa-palmares09.webp', 
+                            'assets/villa palmares/villa-palmares10.webp', 
+                            'assets/villa palmares/villa-palmares11.webp', 
+                            'assets/villa palmares/villa-palmares12.webp', 
+                            'assets/villa palmares/villa-palmares13.webp', 
+                            'assets/villa palmares/villa-palmares14.webp', 
+                            'assets/villa palmares/villa-palmares15.webp', 
+                            'assets/villa palmares/villa-palmares16.webp', 
+                            
+                        ])">
+                        <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-sm mx-4 md:mx-0 rounded-xl">
+                            <img src="assets/villa palmares/villa-palmares01.webp"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-marrom/90 via-transparent to-transparent">
+                            </div>
+
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 p-8 text-white w-full glass-overlay translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="text-bronze uppercase text-[10px] font-bold tracking-[0.2em]">Praia do
+                                    Forte – Bahia</span>
+                                <h3 class="text-2xl md:text-3xl font-serif mt-2 mb-2">Villa Palmier</h3>
+                                <p
+                                    class="text-xs md:text-sm text-white/80 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    Villa Boutique Beira-Mar – 5 Suítes – Acomoda até 10 pessoas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide group cursor-pointer" onclick="openPropertyModal('Villa 15', 'Morro de São Paulo - Bahia', 'Descubra a elegância serena em um santuário de luz natural no Morro de São Paulo. Na Villa 15, o luxo se manifesta na paz do jardim e no acesso direto ao mar. Viva a exclusividade Maruwá com um serviço impecável, desenhado para que você sinta a leveza de estar exatamente onde sempre sonhou. ', [
+                            'assets/villa 15/villa15-01.webp', 
+                            'assets/villa 15/villa15-02.webp', 
+                            'assets/villa 15/villa15-03.webp',
+                            'assets/villa 15/villa15-04.webp',
+                            'assets/villa 15/villa15-05.webp',
+                            'assets/villa 15/villa15-06.webp',
+                            'assets/villa 15/villa15-07.webp',
+                            'assets/villa 15/villa15-08.webp',
+                            'assets/villa 15/villa15-09.webp',
+                            'assets/villa 15/villa15-10.webp',
+                            'assets/villa 15/villa15-11.webp',
+                            'assets/villa 15/villa15-12.webp',
+                            'assets/villa 15/villa15-13.webp',
+                            'assets/villa 15/villa15-14.webp',
+                            'assets/villa 15/villa15-15.webp',
+                            'assets/villa 15/villa15-16.webp',
+                            'assets/villa 15/villa15-17.webp',
+                            'assets/villa 15/villa15-18.webp',
+                            'assets/villa 15/villa15-19.webp',
+                            'assets/villa 15/villa15-20.webp',
+                            'assets/villa 15/villa15-21.webp',
+                            'assets/villa 15/villa15-22.webp',
+                            'assets/villa 15/villa15-23.webp',
+                            
+                        ])">
+                        <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-sm mx-4 md:mx-0 rounded-xl">
+                            <img src="assets/villa 15/villa15-01.webp"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-marrom/90 via-transparent to-transparent">
+                            </div>
+
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 p-8 text-white w-full glass-overlay translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="text-bronze uppercase text-[10px] font-bold tracking-[0.2em]">Morro de São
+                                    Paulo - Bahia</span>
+                                <h3 class="text-2xl md:text-3xl font-serif mt-2 mb-2">Villa 15</h3>
+                                <p
+                                    class="text-xs md:text-sm text-white/80 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    Villa Boutique pé na areia - 5 Suítes - Acomoda até 10 pessoas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide group cursor-pointer" onclick="openPropertyModal('Villa Brisa do Mar', 'Itacimirim – Bahia', 'Adormeça com o som das ondas e desperte com o privilégio de ter o oceano como quintal em Itacimirim. Um refúgio pé na areia que une leveza e sofisticação para momentos em família. Viva a exclusividade Maruwá em ambientes iluminados, onde o horizonte azul é o cenário de memórias inesquecíveis. ', [
+                            'assets/vila brisa/villa-brisa01.webp', 
+                            'assets/vila brisa/villa-brisa02.webp', 
+                            'assets/vila brisa/villa-brisa03.webp', 
+                            'assets/vila brisa/villa-brisa04.webp', 
+                            'assets/vila brisa/villa-brisa05.webp', 
+                            'assets/vila brisa/villa-brisa06.webp', 
+                            'assets/vila brisa/villa-brisa07.webp', 
+                            'assets/vila brisa/villa-brisa08.webp', 
+                            'assets/vila brisa/villa-brisa09.webp', 
+                            'assets/vila brisa/villa-brisa10.webp', 
+                            'assets/vila brisa/villa-brisa11.webp', 
+                            'assets/vila brisa/villa-brisa12.webp', 
+                            'assets/vila brisa/villa-brisa13.webp', 
+                            'assets/vila brisa/villa-brisa14.webp', 
+                            'assets/vila brisa/villa-brisa15.webp', 
+                            'assets/vila brisa/villa-brisa16.webp', 
+                            'assets/vila brisa/villa-brisa17.webp', 
+                            'assets/vila brisa/villa-brisa18.webp', 
+                            'assets/vila brisa/villa-brisa19.webp', 
+                            
+                        ])">
+                        <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-sm mx-4 md:mx-0 rounded-xl">
+                            <img src="assets/vila brisa/villa-brisa01.webp"
+                                class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-marrom/90 via-transparent to-transparent">
+                            </div>
+
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 p-8 text-white w-full glass-overlay translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="text-bronze uppercase text-[10px] font-bold tracking-[0.2em]">Itacimirim –
+                                    Bahia</span>
+                                <h3 class="text-2xl md:text-3xl font-serif mt-2 mb-2">Villa Brisa do Mar</h3>
+                                <p
+                                    class="text-xs md:text-sm text-white/80 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    Villa Boutique pé na areia – 3 Suítes – Acomoda até 8 pessoas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next right-4 md:right-5 shadow-lg hidden md:flex"></div>
+                <div class="swiper-button-prev left-4 md:left-5 shadow-lg hidden md:flex"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencias" class="py-24 md:py-32 bg-marrom text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="hidden lg:grid grid-cols-2 gap-12 xl:gap-20 items-center">
+
+                <div class="gs-reveal z-20">
+
+                    <div class="mb-12">
+                        <span class="text-bronze uppercase tracking-[0.3em] text-xs font-bold block mb-4">Além do
+                            comum</span>
+                        <h2 class="text-5xl lg:text-6xl font-serif">A curadoria da sua estadia</h2>
+                    </div>
+
+                    <div class="border-t border-white/20">
+                        <div class="border-b border-white/20">
+                            <button
+                                class="accordion-btn w-full py-6 flex justify-between items-center group text-bronze"
+                                data-type="video" data-src="assets/acordeon/Exp 3.mp4" onclick="toggleAccordion(this)">
+                                <span class="text-xl md:text-2xl font-serif transition-colors">Experiência Concierge de
+                                    Luxo</span>
+                                <span
+                                    class="icon text-2xl transition-transform duration-300 transform rotate-180">-</span>
+                            </button>
+                            <div class="accordion-content" style="height: auto;">
+                                <p class="pb-6 text-white/70 font-light leading-relaxed text-sm">
+                                    Private chef, Vivências Spa, passeios de quadriciclo, de helicóptero e de lancha;
+                                    passeios
+                                    a cavalo, aulas de golfe, aulas de surfe e muito mais. Tudo organizado para que sua
+                                    única
+                                    preocupação seja aproveitar o momento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-white/20">
+                            <button class="accordion-btn w-full py-6 flex justify-between items-center group"
+                                data-type="image" data-src="assets/acordeon/localização2.avif"
+                                onclick="toggleAccordion(this)">
+                                <span
+                                    class="text-xl md:text-2xl font-serif group-hover:text-bronze transition-colors">Localizações
+                                    Exclusivas</span>
+                                <span class="icon text-2xl text-bronze transition-transform duration-300">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="pb-6 text-white/70 font-light leading-relaxed text-sm">
+                                    Nossas propriedades ficam a poucos passos do mar e em condomínios de altíssimo
+                                    padrão, oferecendo vistas de tirar o folego.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-white/20">
+                            <button class="accordion-btn w-full py-6 flex justify-between items-center group"
+                                data-type="image" data-src="assets/acordeon/privacidade.avif"
+                                onclick="toggleAccordion(this)">
+                                <span
+                                    class="text-xl md:text-2xl font-serif group-hover:text-bronze transition-colors">Privacidade
+                                    e Conforto Premium</span>
+                                <span class="icon text-2xl text-bronze transition-transform duration-300">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="pb-6 text-white/70 font-light leading-relaxed text-sm">
+                                    Ambientes amplos, segurança 24 horas, enxoval de hotelaria 5 estrelas e um design de
+                                    interiores que reflete sofisticação e aconchego.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gs-reveal relative h-[750px] rounded-3xl overflow-hidden bg-black shadow-2xl">
+                    <video id="exp-video" controls playsinline preload="metadata"
+                        class="absolute inset-0 w-full h-full object-cover opacity-100 z-10">
+                        <source src="assets/acordeon/Exp 3.mp4" type="video/mp4">
+                    </video>
+                    <img id="exp-img" src="" class="absolute inset-0 w-full h-full object-cover scale-105 opacity-0 z-0"
+                        alt="Experiência Premium">
+
+                    <div class="absolute inset-0 bg-marrom/20 mix-blend-multiply pointer-events-none z-10"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block lg:hidden gs-reveal w-full relative pb-12 pt-4">
+
+            <div class="px-6 mb-10">
+                <span class="text-bronze uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold block mb-3">Além do
+                    comum</span>
+                <h2 class="text-4xl font-serif">A curadoria da sua estadia</h2>
+            </div>
+
+            <div class="swiper mobileExpSwiper !overflow-visible">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide w-[85%] max-w-[360px]">
+                        <div class="mobile-card-anim relative h-[550px] rounded-3xl overflow-hidden shadow-2xl">
+                            <video controls playsinline preload="metadata"
+                                class="absolute inset-0 w-full h-full object-cover">
+                                <source src="assets/acordeon/Exp 3.mp4" type="video/mp4">
+                            </video>
+                            <div
+                                class="absolute bottom-4 left-4 right-4 glass-overlay rounded-2xl overflow-hidden shadow-lg border border-white/20 bg-white/5 backdrop-blur-md z-20">
+                                <button class="w-full p-5 flex justify-between items-center text-left text-white"
+                                    onclick="toggleMobileAccordion(this)">
+                                    <h3 class="text-xl font-serif">Experiência Concierge</h3>
+                                    <span
+                                        class="mobile-icon text-2xl text-bronze transition-transform duration-300 transform leading-none">+</span>
+                                </button>
+                                <div
+                                    class="mobile-accordion-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <p class="px-5 pb-5 text-white/80 font-light text-[13px] leading-relaxed">
+                                        Private chef, Vivências Spa, passeios de quadriciclo, de helicóptero e de
+                                        lancha; passeios
+                                        a cavalo, aulas de golfe, aulas de surfe e muito mais. Tudo organizado para que
+                                        sua única
+                                        preocupação seja aproveitar o momento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide w-[85%] max-w-[360px]">
+                        <div class="mobile-card-anim relative h-[550px] rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="assets/acordeon/localização2.avif"
+                                class="absolute inset-0 w-full h-full object-cover scale-105">
+
+
+                            <div
+                                class="absolute bottom-4 left-4 right-4 glass-overlay rounded-2xl overflow-hidden shadow-lg border border-white/20 bg-white/5 backdrop-blur-md z-20">
+                                <button class="w-full p-5 flex justify-between items-center text-left text-white"
+                                    onclick="toggleMobileAccordion(this)">
+                                    <h3 class="text-xl font-serif">Localizações Exclusivas</h3>
+                                    <span
+                                        class="mobile-icon text-2xl text-bronze transition-transform duration-300 transform leading-none">+</span>
+                                </button>
+                                <div
+                                    class="mobile-accordion-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <p class="px-5 pb-5 text-white/80 font-light text-[13px] leading-relaxed">
+                                        Nossas propriedades ficam a poucos passos do mar e em condomínios de altíssimo
+                                        padrão, oferecendo vistas de tirar o folego.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide w-[85%] max-w-[360px]">
+                        <div class="mobile-card-anim relative h-[550px] rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="assets/acordeon/privacidade.avif"
+                                class="absolute inset-0 w-full h-full object-cover scale-105">
+
+
+                            <div
+                                class="absolute bottom-4 left-4 right-4 glass-overlay rounded-2xl overflow-hidden shadow-lg border border-white/20 bg-white/5 backdrop-blur-md z-20">
+                                <button class="w-full p-5 flex justify-between items-center text-left text-white"
+                                    onclick="toggleMobileAccordion(this)">
+                                    <h3 class="text-xl font-serif">Conforto Premium</h3>
+                                    <span
+                                        class="mobile-icon text-2xl text-bronze transition-transform duration-300 transform leading-none">+</span>
+                                </button>
+                                <div
+                                    class="mobile-accordion-content max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <p class="px-5 pb-5 text-white/80 font-light text-[13px] leading-relaxed">
+                                        Ambientes amplos, segurança 24 horas, enxoval de hotelaria 5 estrelas e um
+                                        design de
+                                        interiores que reflete sofisticação e aconchego.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination !-bottom-12 relative"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-32 bg-[#F9F9F9]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            <div class="gs-reveal space-y-6 order-1 lg:col-start-2 lg:row-start-1">
+                <span class="text-bronze uppercase tracking-[0.3em] text-xs font-bold block">A Essência Maruwá</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-marrom leading-snug">
+                    Elevando o padrão de hospitalidade no Nordeste Brasileiro.
+                </h2>
+            </div>
+
+            <div
+                class="gs-reveal relative w-full aspect-[4/5] overflow-hidden rounded-xl shadow-2xl bg-black order-2 lg:col-start-1 lg:row-start-1 lg:row-span-2">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-95">
+                    <source src="assets/maruwa sobre 2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="gs-reveal space-y-6 order-3 lg:col-start-2 lg:row-start-2 lg:self-start">
+                <p class="text-marrom/70 font-light leading-relaxed">
+                    Estamos redefinindo o que significa viver a hospitalidade no Nordeste brasileiro.
+                    Para nós, não se trata apenas de abrir portas — mas de acolher histórias, criar memórias e despertar
+                    sensações.
+                    Não oferecemos casas. Oferecemos refúgios de alma: lugares onde o tempo parece respirar, onde a
+                    natureza abraça e onde cada ambiente convida a sentir, a celebrar e a simplesmente estar.
+                    Cada propriedade passa por uma curadoria feita com sensibilidade e propósito — arquitetura que
+                    emociona, comodidades que cuidam e localizações que preservam a beleza intacta do litoral.
+                </p>
+                <p class="text-marrom/70 font-light leading-relaxed">
+                    A Maruwá se tornou um símbolo de confiança porque entende o que o verdadeiro luxo representa: tempo
+                    para viver ao seu ritmo, espaço para ser quem você é e privacidade para guardar momentos que ninguém
+                    mais precisa ver — só sentir.
+                    Aqui, cada estadia é mais do que uma hospedagem.
+                    É um capítulo especial na vida de quem chega.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenca" class="py-40 md:py-48 bg-marrom relative text-white overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <img src="assets/BG VILA MARÉ 2.avif" class="w-full h-full object-cover" alt="Background Texture">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 gs-reveal">
+                <span class="text-bronze uppercase tracking-[0.3em] text-xs font-bold block mb-4">A Diferença
+                    Maruwá</span>
+                <h2 class="text-4xl md:text-5xl font-serif">Por que alugar com a Maruwá Villas?</h2>
+                <div class="w-16 h-[1px] bg-bronze mx-auto mt-8"></div>
+            </div>
+
+            <div id="auth-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 group/board">
+
+                <div
+                    class="auth-card glass-card-dark p-8 rounded-xl group/card transition-all duration-500 ease-in-out will-change-transform group-hover/board:opacity-40 group-hover/board:scale-[0.97] hover:!opacity-100 hover:!scale-[1.05] hover:!bg-white/10 hover:shadow-[0_20px_40px_rgba(207,117,62,0.15)] hover:-translate-y-2">
+                    <svg class="w-10 h-10 text-bronze mb-6 group-hover/card:-translate-y-2 transition-transform duration-500 ease-out"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                        </path>
+                    </svg>
+                    <h3 class="text-xl font-serif mb-3 text-white transition-colors duration-300">Hospedagens Boutique
+                    </h3>
+                    <p class="text-sm font-light text-white/70 leading-relaxed">Villas totalmente equipadas para
+                        garantir que você tenha o que precisa, com conforto e sofisticação</p>
+                </div>
+
+                <div
+                    class="auth-card glass-card-dark p-8 rounded-xl group/card transition-all duration-500 ease-in-out will-change-transform group-hover/board:opacity-40 group-hover/board:scale-[0.97] hover:!opacity-100 hover:!scale-[1.05] hover:!bg-white/10 hover:shadow-[0_20px_40px_rgba(207,117,62,0.15)] hover:-translate-y-2">
+                    <svg class="w-10 h-10 text-bronze mb-6 group-hover/card:-translate-y-2 transition-transform duration-500 ease-out"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                        </path>
+                    </svg>
+                    <h3 class="text-xl font-serif mb-3 text-white transition-colors duration-300">Concierge multilíngue
+                    </h3>
+                    <p class="text-sm font-light text-white/70 leading-relaxed">Boas vindas e assistência pessoal no
+                        destino em 5 idiomas (Português, Inglês, Espanhol, Alemão e Italiano)</p>
+                </div>
+
+                <div
+                    class="auth-card glass-card-dark p-8 rounded-xl group/card transition-all duration-500 ease-in-out will-change-transform group-hover/board:opacity-40 group-hover/board:scale-[0.97] hover:!opacity-100 hover:!scale-[1.05] hover:!bg-white/10 hover:shadow-[0_20px_40px_rgba(207,117,62,0.15)] hover:-translate-y-2">
+                    <svg class="w-10 h-10 text-bronze mb-6 group-hover/card:-translate-y-2 transition-transform duration-500 ease-out"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                        </path>
+                    </svg>
+                    <h3 class="text-xl font-serif mb-3 text-white transition-colors duration-300">Reserva fácil e segura
+                    </h3>
+                    <p class="text-sm font-light text-white/70 leading-relaxed">Livre de comissões, pagamento da reserva
+                        somente após assinatura do contrato de aluguel por temporada</p>
+                </div>
+
+                <div
+                    class="auth-card glass-card-dark p-8 rounded-xl group/card transition-all duration-500 ease-in-out will-change-transform group-hover/board:opacity-40 group-hover/board:scale-[0.97] hover:!opacity-100 hover:!scale-[1.05] hover:!bg-white/10 hover:shadow-[0_20px_40px_rgba(207,117,62,0.15)] hover:-translate-y-2">
+                    <svg class="w-10 h-10 text-bronze mb-6 group-hover/card:-translate-y-2 transition-transform duration-500 ease-out"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                        </path>
+                    </svg>
+                    <h3 class="text-xl font-serif mb-3 text-white transition-colors duration-300">Property Manager local
+                    </h3>
+                    <p class="text-sm font-light text-white/70 leading-relaxed">Assistência durante toda a estadia,
+                        recomendação dos melhores lugares da região e dicas para aproveitar ao máximo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificacoes" class="py-24 bg-marrom relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <img src="assets/footer/mockup-footer1.svg" class="w-full h-full object-cover" alt="Background Texture">
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center mb-12 gs-reveal">
+            <span class="text-bronze uppercase tracking-[0.3em] text-xs font-bold block mb-4">Reconhecimento</span>
+            <h2 class="text-4xl md:text-5xl font-serif text-white">Nossas Certificações</h2>
+        </div>
+
+        <div class="w-full relative z-10 fade-mask py-4 overflow-hidden gs-reveal">
+            <div class="badges-marquee-track">
+                <div class="flex gap-6 md:gap-8 min-w-max pr-6 md:pr-8">
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Empresa-Sustentavel-Maruwa.webp" alt="Selo Empresa Sustentável"
+                            class="w-full h-full object-cover rounded-[1.5rem]">
+                    </div>
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Google Meu Negocio-Maruwa.jpeg" alt="Google Meu Negócio"
+                            class="w-full h-full object-cover rounded-[1.5rem] object-center">
+                    </div>
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Maruwa-Cadastur.webp" alt="Cadastur"
+                            class="w-full h-full object-cover rounded-[1.5rem] object-center">
+                    </div>
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Maruwá-Superhost - Airbnb.webp" alt="Superhost Airbnb"
+                            class="w-full h-full object-cover rounded-[1.5rem] object-top">
+                    </div>
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Maruwá-Superhost - Airbnb-2.jpeg" alt="Superhost Airbnb Status"
+                            class="w-full h-full object-cover rounded-[1.5rem] object-top">
+                    </div>
+                </div>
+                <div class="flex gap-6 md:gap-8 min-w-max pr-6 md:pr-8" aria-hidden="true">
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Empresa-Sustentavel-Maruwa.webp" alt="Selo Empresa Sustentável"
+                            class="w-full h-full object-cover rounded-[1.5rem]">
+                    </div>
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Google Meu Negocio-Maruwa.jpeg" alt="Google Meu Negócio"
+                            class="w-full h-full object-cover rounded-[1.5rem] object-center">
+                    </div>
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Maruwa-Cadastur.webp" alt="Cadastur"
+                            class="w-full h-full object-cover rounded-[1.5rem] object-center">
+                    </div>
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Maruwá-Superhost - Airbnb.webp" alt="Superhost Airbnb"
+                            class="w-full h-full object-cover rounded-[1.5rem] object-top">
+                    </div>
+                    <div class="w-56 h-72 md:w-64 md:h-80 glass-card-light p-2 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] shrink-0 transition-transform duration-500 hover:scale-105 hover:shadow-[0_15px_40px_rgb(207,117,62,0.2)] border border-white/60 bg-white/40 flex items-center justify-center cursor-pointer" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/feedback/Maruwá-Superhost - Airbnb-2.jpeg" alt="Superhost Airbnb Status"
+                            class="w-full h-full object-cover rounded-[1.5rem] object-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="depoimentos" class="py-24 md:py-32 bg-[#F5F2EF] overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 mb-12 lg:mb-20 text-center lg:text-center gs-reveal">
+            <span class="text-bronze uppercase tracking-[0.3em] text-xs font-bold block mb-4">Feedback</span>
+            <h2 class="text-4xl md:text-5xl font-serif text-marrom">A experiência sob o olhar de quem viveu</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center lg:items-stretch gap-12 gs-reveal">
+            
+            <div class="w-full lg:w-1/3 flex flex-col items-center lg:items-center text-center lg:text-center justify-center bg-white/40 p-8 rounded-2xl border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                <h3 class="text-2xl font-serif text-marrom font-bold mb-2">EXCELENTE</h3>
+                <div class="flex text-bronze mb-4 gap-1">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                </div>
+                <p class="text-sm font-light text-marrom/70 mb-8">Com base na opinião de<br><strong class="font-semibold text-marrom">nossos clientes</strong></p>
+                <div class="h-32 mt-auto">
+                    <img src="assets/logo2.png" alt="Maruwá Villas" class="h-full object-contain">
+                </div>
+            </div>
+
+            <div class="w-full lg:w-2/3 relative min-w-0">
+                <div class="swiper testimonialSwiper !pb-12 !px-2 -mx-2">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide !w-auto h-auto">
+                            <div class="w-80 md:w-96 glass-card-light p-8 rounded-xl h-full flex flex-col text-left cursor-grab active:cursor-grabbing">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-bronze/20 flex items-center justify-center text-bronze font-serif font-bold text-sm">PM</div>
+                                        <div class="flex flex-col">
+                                            <h4 class="font-semibold text-sm text-marrom leading-none">DR. Pedro Mendes</h4>
+                                            <span class="text-xs text-marrom/60 mt-1">1 Agosto 2025</span>
+                                        </div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                    </svg>
+                                </div>
+                                
+                                <div class="flex text-bronze mb-3 items-center gap-1">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                                </div>
+                                <p class="text-marrom/80 font-light text-sm leading-relaxed italic">"Minha estadia na Vila
+                                        Paraíso do Mar em Guarajuba, entre os dias 10 e 15 de outubro, foi simplesmente impecável. A
+                                        casa é ótima, confortável e superou nossas expectativas.
+                                        Gostaria de registrar o profissionalismo da empresa responsável, que se mostrou sempre
+                                        disponível e resolveu todas as nossas demandas com agilidade e eficiência.
+                                        Um agradecimento especial aos funcionários da casa, que tornaram nossa experiência ainda
+                                        mais incrível. Simone, Bruno, Iasmin e Laine foram excelentes em tudo, sempre muito
+                                        atenciosos e prestativos. Recomendo fortemente e com certeza voltaremos"</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide !w-auto h-auto">
+                            <div class="w-80 md:w-96 glass-card-light p-8 rounded-xl h-full flex flex-col text-left cursor-grab active:cursor-grabbing">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-bronze/20 flex items-center justify-center text-bronze font-serif font-bold text-sm">PA</div>
+                                        <div class="flex flex-col">
+                                            <h4 class="font-semibold text-sm text-marrom leading-none">Poli Adriana</h4>
+                                            <span class="text-xs text-marrom/60 mt-1">1 Agosto 2025</span>
+                                        </div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                    </svg>
+                                </div>
+                                <div class="flex text-bronze mb-3 items-center gap-1">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                                </div>
+                                <p class="text-marrom/80 font-light text-sm leading-relaxed italic">"Nossa estadia começou
+                                        no aeroporto de Salvador, onde uma van veio nos buscar para um passeio guiado pelos lugares
+                                        mais notáveis da cidade.
+                                        No fim do dia, chegamos à Villa Palmier.
+                                        Nossa estadia na Praia do Forte foi excepcional!
+                                        A casa era perfeita em todos os aspectos: espaçosa, confortável, todos os ambientes muito
+                                        bem decorados e de alta qualidade.Ponto forte: Suíte Master
+                                        Localização ideal, oferecendo ao mesmo tempo tranquilidade e proximidade dos principais
+                                        atrativos da região.
+                                        Um dos pontos altos da nossa experiência foi a qualidade do serviço no local. As senhoras
+                                        responsáveis pelo preparo das refeições e cuidado da casa fizeram um trabalho notável: a
+                                        comida deliciosa e a atenção aos detalhes contribuíram enormemente para tornar nossa estadia
+                                        inesquecível.
+                                        Recomendamos fortemente essa propriedade a todos que buscam um cenário idílico para férias
+                                        em família ou com amigos, um serviço atencioso e uma experiência única na Praia do Forte."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide !w-auto h-auto">
+                            <div class="w-80 md:w-96 glass-card-light p-8 rounded-xl h-full flex flex-col text-left cursor-grab active:cursor-grabbing">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-bronze/20 flex items-center justify-center text-bronze font-serif font-bold text-sm">MJ</div>
+                                        <div class="flex flex-col">
+                                            <h4 class="font-semibold text-sm text-marrom leading-none">Maria Julia Storani</h4>
+                                            <span class="text-xs text-marrom/60 mt-1">1 Agosto 2025</span>
+                                        </div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                    </svg>
+                                </div>
+                                <div class="flex text-bronze mb-3 items-center gap-1">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                                </div>
+                                <p class="text-marrom/80 font-light text-sm mb-8 leading-relaxed italic">"Foi um prazer imenso
+                                        poder aproveitar nosso final de ano em Guarajuba na Maruwá Villas. Wesley e Carol foram
+                                        super solícitos, se colocaram à disposição para qualquer necessidade da família, mantendo
+                                        sempre uma comunicação direta e atenciosa.
+                                        A casa é deliciosa e super completa. Com certeza recomendo o local para uma viagem sem
+                                        preocupações!"</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide !w-auto h-auto">
+                            <div class="w-80 md:w-96 glass-card-light p-8 rounded-xl h-full flex flex-col text-left cursor-grab active:cursor-grabbing">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-bronze/20 flex items-center justify-center text-bronze font-serif font-bold text-sm">RC</div>
+                                        <div class="flex flex-col">
+                                            <h4 class="font-semibold text-sm text-marrom leading-none">Rodrigo Caires</h4>
+                                            <span class="text-xs text-marrom/60 mt-1">1 Agosto 2025</span>
+                                        </div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                    </svg>
+                                </div>
+                                <div class="flex text-bronze mb-3 items-center gap-1">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                                </div>
+                                <p class="text-marrom/80 font-light text-sm mb-8 leading-relaxed italic">"Excelente estadia,
+                                        negociação clara, imobiliária séria e de responsabilidade, com toda certeza foi uma
+                                        excelente experiência, espero que continuem assim e prosperem ainda mais!"</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide !w-auto h-auto">
+                            <div class="w-80 md:w-96 glass-card-light p-8 rounded-xl h-full flex flex-col text-left cursor-grab active:cursor-grabbing">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-bronze/20 flex items-center justify-center text-bronze font-serif font-bold text-sm">FM</div>
+                                        <div class="flex flex-col">
+                                            <h4 class="font-semibold text-sm text-marrom leading-none">Felipe Maron</h4>
+                                            <span class="text-xs text-marrom/60 mt-1">1 Agosto 2025</span>
+                                        </div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                    </svg>
+                                </div>
+                                <div class="flex text-bronze mb-3 items-center gap-1">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                                </div>
+                                <p class="text-marrom/80 font-light text-sm mb-8 leading-relaxed italic">"Atendimento de
+                                        excelência, com extrema cordialidade e disponibilidade ao sanar todas as dúvidas e suporte
+                                        necessário.
+                                        Tivemos uma experiência maravilhosa na casa Vila Esmeralda e voltaremos em breve."</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide !w-auto h-auto">
+                            <div class="w-80 md:w-96 glass-card-light p-8 rounded-xl h-full flex flex-col text-left cursor-grab active:cursor-grabbing">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-bronze/20 flex items-center justify-center text-bronze font-serif font-bold text-sm">EL</div>
+                                        <div class="flex flex-col">
+                                            <h4 class="font-semibold text-sm text-marrom leading-none">Edelaine Longhini</h4>
+                                            <span class="text-xs text-marrom/60 mt-1">1 Agosto 2025</span>
+                                        </div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                    </svg>
+                                </div>
+                                <div class="flex text-bronze mb-3 items-center gap-1">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                                </div>
+                                <p class="text-marrom/80 font-light text-sm mb-8 leading-relaxed italic">"Foram dias
+                                        maravilhosos , junto da família e amigos .
+                                        A casa é muito boa e o atendimento da Maruwá excepcional .
+                                        Desde o primeiro contato até o final da locação , sempre fomos muito bem atendidos Wesley
+                                        sempre respondia muito rápido todas as solicitações..
+                                        As indicações dos prestadores de serviço foram ótimas .
+                                        Tudo foi perfeito para estes dias de férias."</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide !w-auto h-auto">
+                            <div class="w-80 md:w-96 glass-card-light p-8 rounded-xl h-full flex flex-col text-left cursor-grab active:cursor-grabbing">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-bronze/20 flex items-center justify-center text-bronze font-serif font-bold text-sm">LC</div>
+                                        <div class="flex flex-col">
+                                            <h4 class="font-semibold text-sm text-marrom leading-none">Liliana Cruvinel</h4>
+                                            <span class="text-xs text-marrom/60 mt-1">1 Agosto 2025</span>
+                                        </div>
+                                    </div>
+                                    <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                    </svg>
+                                </div>
+                                <div class="flex text-bronze mb-3 items-center gap-1">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                                    <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                                </div>
+                                <p class="text-marrom/80 font-light text-sm mb-8 leading-relaxed italic">"Olá! Estávamos em um
+                                        grupo de 6 casais de 05 a 08/09/25 no Iberostar Villas. A experiência na casa foi incrível!
+                                        Além da casa ser maravilhosa e com tudo que precisávamos, o serviço da Maruwá Villas foi de
+                                        excelência! Com certeza voltaremos a ter novas experiências com essa empresa!👏🏼"</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section id="faq" class="py-32 bg-marrom relative">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            <div
+                class="hidden lg:block relative w-full aspect-[4/5] md:h-[600px] overflow-hidden rounded-sm shadow-2xl gs-reveal">
+                <img src="assets/faq/mockup-faq.jpg" alt="FAQ Maruwá Villas"
+                    class="w-full h-full object-cover opacity-95 rounded-xl">
+            </div>
+
+            <div class="gs-reveal">
+                <div class="text-left mb-12">
+                    <span
+                        class="text-bronze uppercase tracking-[0.3em] text-xs font-bold block mb-4">Esclarecimentos</span>
+                    <h2 class="text-4xl md:text-5xl font-serif text-white">Dúvidas Frequentes</h2>
+                    <div class="w-16 h-[1px] bg-bronze mt-8"></div>
+                </div>
+
+                <div class="border-t border-white/20">
+                    <div class="border-b border-white/20">
+                        <button class="faq-btn w-full py-6 flex justify-between items-center group text-left"
+                            onclick="toggleFaq(this)">
+                            <span
+                                class="text-lg md:text-xl font-serif text-white group-hover:text-bronze transition-colors pr-4">1.
+                                O investimento é alto. Será que realmente vale a pena?</span>
+                            <span
+                                class="faq-icon text-2xl text-bronze transition-transform duration-300 shrink-0">+</span>
+                        </button>
+                        <div class="faq-content overflow-hidden transition-all duration-500 cubic-bezier(0.165, 0.84, 0.44, 1)"
+                            style="height: 0px;">
+                            <p class="pb-6 text-white/70 font-light leading-relaxed text-sm">
+                                Na Maruwá Villas, você não paga por uma casa — você escolhe viver uma experiência
+                                única.<br><br>
+                                Conforto superior, privacidade, localização privilegiada e serviços como camareira,
+                                Private
+                                Chef e massoterapia tornam cada dia especial.<br><br>
+                                Você não está pagando por uma hospedagem. Você está investindo na tranquilidade que não
+                                tem
+                                preço, em dias que vão virar histórias, em memórias que ficam para sempre.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-white/20">
+                        <button class="faq-btn w-full py-6 flex justify-between items-center group text-left"
+                            onclick="toggleFaq(this)">
+                            <span
+                                class="text-lg md:text-xl font-serif text-white group-hover:text-bronze transition-colors pr-4">2.
+                                E se houver algum problema durante a estadia?</span>
+                            <span
+                                class="faq-icon text-2xl text-bronze transition-transform duration-300 shrink-0">+</span>
+                        </button>
+                        <div class="faq-content overflow-hidden transition-all duration-500 cubic-bezier(0.165, 0.84, 0.44, 1)"
+                            style="height: 0px;">
+                            <p class="pb-6 text-white/70 font-light leading-relaxed text-sm">
+                                Você nunca fica sozinho. Nossas propriedades contam com suporte premium durante toda a
+                                estadia, com atendimento rápido, humanizado e resolutivo. Qualquer necessidade — seja
+                                manutenção, reposição de itens, limpeza extra ou dúvidas — é atendida por uma equipe
+                                treinada e dedicada. Nossa meta é que você relaxe, aproveite e não precise se preocupar
+                                com
+                                absolutamente nada. Estamos sempre a um WhatsApp de distância.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-white/20">
+                        <button class="faq-btn w-full py-6 flex justify-between items-center group text-left"
+                            onclick="toggleFaq(this)">
+                            <span
+                                class="text-lg md:text-xl font-serif text-white group-hover:text-bronze transition-colors pr-4">3.
+                                A região é segura? E o condomínio, é organizado?</span>
+                            <span
+                                class="faq-icon text-2xl text-bronze transition-transform duration-300 shrink-0">+</span>
+                        </button>
+                        <div class="faq-content overflow-hidden transition-all duration-500 cubic-bezier(0.165, 0.84, 0.44, 1)"
+                            style="height: 0px;">
+                            <p class="pb-6 text-white/70 font-light leading-relaxed text-sm">
+                                Nossas Villas estão localizadas em condomínios de alto padrão, com segurança 24h,
+                                controle
+                                de acesso, monitoramento e infraestrutura completa, exatamente como quem busca luxo
+                                exige.
+                                Além disso, recomendamos apenas bairros e destinos reconhecidos pela excelente
+                                reputação,
+                                tranquilidade e sofisticação. Você e sua família estarão em um ambiente seguro,
+                                silencioso,
+                                organizado e exclusivo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-white/20">
+                        <button class="faq-btn w-full py-6 flex justify-between items-center group text-left"
+                            onclick="toggleFaq(this)">
+                            <span
+                                class="text-lg md:text-xl font-serif text-white group-hover:text-bronze transition-colors pr-4">4.
+                                E se a casa não for exatamente como nas fotos?</span>
+                            <span
+                                class="faq-icon text-2xl text-bronze transition-transform duration-300 shrink-0">+</span>
+                        </button>
+                        <div class="faq-content overflow-hidden transition-all duration-500 cubic-bezier(0.165, 0.84, 0.44, 1)"
+                            style="height: 0px;">
+                            <p class="pb-6 text-white/70 font-light leading-relaxed text-sm">
+                                Nossas propriedades passam por curadoria profissional e todas as fotos são atualizadas e
+                                condizem fielmente com o imóvel real. Além disso, enviamos vídeos do imóvel, tour
+                                virtual em
+                                3D e realizamos videochamada ao vivo, caso o hóspede deseje ver cada detalhe antes de
+                                reservar.<br><br>
+                                Transparência total é parte essencial da nossa experiência premium.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border-b border-white/20">
+                        <button class="faq-btn w-full py-6 flex justify-between items-center group text-left"
+                            onclick="toggleFaq(this)">
+                            <span
+                                class="text-lg md:text-xl font-serif text-white group-hover:text-bronze transition-colors pr-4">5.
+                                É seguro alugar uma Villa com a Maruwá Villas?</span>
+                            <span
+                                class="faq-icon text-2xl text-bronze transition-transform duration-300 shrink-0">+</span>
+                        </button>
+                        <div class="faq-content overflow-hidden transition-all duration-500 cubic-bezier(0.165, 0.84, 0.44, 1)"
+                            style="height: 0px;">
+                            <p class="pb-6 text-white/70 font-light leading-relaxed text-sm">
+                                Sem dúvida. Na Maruwá Villas, segurança e credibilidade fazem parte da nossa
+                                essência.<br><br>
+                                Nossa operação é respaldada por certificações oficiais, todas ativas, regulares e de
+                                consulta pública — uma garantia inequívoca de profissionalismo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserva" class="py-32 bg-[#F9F9F9] relative">
+        <div class="max-w-3xl mx-auto px-6 gs-reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif text-marrom mb-4">Solicite uma Reserva</h2>
+                <p class="text-marrom/60 font-light">Um de nossos concierges entrará em contato em até 2 horas.</p>
+            </div>
+
+            <form id="bookingForm" class="space-y-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="relative">
+                        <input type="text" id="nome"
+                            class="w-full bg-transparent border-b border-marrom/20 py-3 text-marrom focus:outline-none focus:border-bronze transition-colors peer placeholder-transparent"
+                            placeholder="Nome Completo" required>
+                        <label for="nome"
+                            class="absolute left-0 -top-3.5 text-xs text-marrom/50 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bronze uppercase tracking-widest">Nome
+                            Completo</label>
+                    </div>
+                    <div class="relative">
+                        <input type="email" id="email"
+                            class="w-full bg-transparent border-b border-marrom/20 py-3 text-marrom focus:outline-none focus:border-bronze transition-colors peer placeholder-transparent"
+                            placeholder="E-mail" required>
+                        <label for="email"
+                            class="absolute left-0 -top-3.5 text-xs text-marrom/50 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bronze uppercase tracking-widest">E-mail</label>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="relative">
+                        <input type="tel" id="telefone"
+                            class="w-full bg-transparent border-b border-marrom/20 py-3 text-marrom focus:outline-none focus:border-bronze transition-colors peer placeholder-transparent"
+                            placeholder="WhatsApp" required>
+                        <label for="telefone"
+                            class="absolute left-0 -top-3.5 text-xs text-marrom/50 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bronze uppercase tracking-widest">WhatsApp
+                            / Telefone</label>
+                    </div>
+                    <div class="relative">
+                        <select id="destino"
+                            class="w-full bg-transparent border-b border-marrom/20 py-3 text-marrom focus:outline-none focus:border-bronze transition-colors appearance-none uppercase text-sm tracking-widest">
+                            <option value="" disabled selected>Escolha seu destino</option>
+                            <option value="praia-do-forte">Praia do Forte</option>
+                            <option value="guarajuba">Guarajuba</option>
+                            <option value="itacimirim">Itacimirim</option>
+                            <option value="sauipe">Costa do Sauípe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="relative">
+                        <input type="text" id="data"
+                            class="w-full bg-transparent border-b border-marrom/20 py-3 text-marrom focus:outline-none focus:border-bronze transition-colors peer placeholder-transparent"
+                            placeholder="DD/MM/AAAA - DD/MM/AAAA" required>
+                        <label for="data"
+                            class="absolute left-0 -top-3.5 text-xs text-marrom/50 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bronze uppercase tracking-widest">Período
+                            da reserva</label>
+                    </div>
+                    <div class="relative">
+                        <input type="number" id="hospedes" min="1" max="20"
+                            class="w-full bg-transparent border-b border-marrom/20 py-3 text-marrom focus:outline-none focus:border-bronze transition-colors peer placeholder-transparent"
+                            placeholder="Hóspedes" required>
+                        <label for="hospedes"
+                            class="absolute left-0 -top-3.5 text-xs text-marrom/50 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-bronze uppercase tracking-widest">Nº
+                            de Hóspedes</label>
+                    </div>
+                </div>
+
+                <button type="submit"
+                    class="w-full btn-premium py-5 text-white uppercase tracking-[0.2em] font-semibold text-sm mt-8 rounded-xl">
+                    Solicitar Disponibilidade
+                </button>
+                <p class="text-[10px] md:text-xs text-marrom/60 mt-4 text-center leading-relaxed">
+                    Ao enviar este formulário, você concorda com nossa <a href="https://maruwavillas.com/politica-de-privacidade" class="underline hover:text-bronze transition-colors" target="_blank">política de privacidade</a> e autoriza o tratamento dos seus dados conforme a LGPD. Prometemos respeitar sua privacidade e não enviar spam.
+                </p>
+                <div id="form-feedback"
+                    class="text-center text-bronze hidden mt-4 text-sm font-semibold tracking-widest uppercase">
+                    Solicitação enviada com sucesso!</div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="relative bg-[#59342b] text-white/60 py-20 px-6 overflow-hidden">
+
+        <div class="absolute inset-0 z-0 opacity-[0.5] mix-blend-color-dodge pointer-events-none bg-cover bg-center bg-no-repeat"
+            style="background-image: url('assets/footer/mockup-footer1.svg');">
+        </div>
+
+        <div
+            class="absolute inset-0 z-0 bg-gradient-to-t from-[#59342b] via-[#59342b]/80 to-[#59342b]/40 pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+            <div class="col-span-1 md:col-span-2">
+                <div class="mb-8 h-24">
+                    <img src="assets/logo.png" alt="Maruwá Villas"
+                        class="h-full w-auto object-contain mix-blend-screen scale-125 origin-left">
+                </div>
+                <p class="font-light text-sm max-w-sm mb-6 leading-relaxed text-white/80">Especialista em gestão de
+                    imóveis de alto padrão para aluguel por temporada com experiências de luxo no Litoral Norte da
+                    Bahia. Cuidamos de cada detalhe para que você viva experiências únicas.</p>
+                <p class="text-sm font-light leading-relaxed text-white/80">info@maruwavillas.com<br>+55 71 3838-8647
+                </p>
+                <p class="text-sm font-light mt-4 text-white/60">CNPJ: 50.596.567/0001-40.<br>CRECI J-2935</p>
+            </div>
+
+            <div>
+                <h4 class="text-white uppercase tracking-widest text-xs font-bold mb-6">Destinos</h4>
+                <ul class="space-y-3 text-sm font-light">
+                    <li><a href="#imoveis" class="hover:text-bronze hover:pl-1 transition-all duration-300">Praia do
+                            Forte</a></li>
+                    <li><a href="#imoveis"
+                            class="hover:text-bronze hover:pl-1 transition-all duration-300">Guarajuba</a></li>
+                    <li><a href="#imoveis"
+                            class="hover:text-bronze hover:pl-1 transition-all duration-300">Itacimirim</a></li>
+                    <li><a href="#imoveis" class="hover:text-bronze hover:pl-1 transition-all duration-300">Sauípe</a>
+                    </li>
+                    <li><a href="#imoveis" class="hover:text-bronze hover:pl-1 transition-all duration-300">Morro de São
+                            Paulo</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white uppercase tracking-widest text-xs font-bold mb-6">Social</h4>
+                <ul class="space-y-3 text-sm font-light">
+                    <li><a href="https://www.instagram.com/maruwavillas/" target="_blank"
+                            class="hover:text-bronze hover:pl-1 transition-all duration-300">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@maruwavillas" target="_blank"
+                            class="hover:text-bronze hover:pl-1 transition-all duration-300">TikTok</a></li>
+                    <li><a href="https://www.youtube.com/@maruwavillas" target="_blank"
+                            class="hover:text-bronze hover:pl-1 transition-all duration-300">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs tracking-widest relative z-10">
+            <p class="text-white/40">&copy; 2026 Maruwá Villas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="propertyModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6">
+        <div id="modalOverlay"
+            class="absolute inset-0 bg-black/90 backdrop-blur-md opacity-0 transition-opacity duration-500 cursor-pointer"
+            onclick="closePropertyModal()"></div>
+
+        <div id="modalContent"
+            class="relative w-full max-w-5xl bg-[#F9F9F9] rounded-lg shadow-2xl overflow-hidden opacity-0 scale-95 transition-all duration-50 flex flex-col max-h-[90vh]">
+            <div class="absolute top-0 w-full p-4 flex justify-end z-50 pointer-events-none">
+                <button onclick="closePropertyModal()"
+                    class="w-10 h-10 bg-black/40 backdrop-blur-sm hover:bg-bronze transition-colors rounded-full flex items-center justify-center text-white pointer-events-auto">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="w-full h-[40vh] sm:h-[60vh] relative bg-black">
+                <div class="swiper modalSwiper w-full h-full">
+                    <div class="swiper-wrapper" id="modalSwiperWrapper">
+                    </div>
+
+                    <div class="swiper-button-prev flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-button-next flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-pagination !bottom-4"></div>
+                </div>
+            </div>
+
+            <div class="p-6 md:p-8 bg-white z-10 shadow-[0_-10px_30px_rgba(0,0,0,0.05)]">
+                <span class="text-bronze uppercase tracking-[0.2em] text-[10px] font-bold"
+                    id="modalLocation">Local</span>
+                <h3 class="text-2xl md:text-4xl font-serif text-marrom mt-2 mb-3" id="modalTitle">Nome da Villa</h3>
+                <p class="text-sm font-light text-marrom/70" id="modalDesc">Descrição curta aqui.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="fixed inset-0 z-[200] hidden items-center justify-center p-4 sm:p-6" onclick="closeImageModal()">
+        <div id="imageModalOverlay" class="absolute inset-0 bg-black/90 backdrop-blur-md opacity-0 transition-opacity duration-300"></div>
+        <div class="relative z-10 max-w-5xl max-h-[90vh] flex items-center justify-center">
+            <img id="expandedImg" src="" class="max-w-full max-h-[90vh] object-contain scale-95 opacity-0 transition-all duration-300 rounded-xl shadow-2xl">
+            <button onclick="closeImageModal()" class="absolute -top-4 -right-4 md:-top-6 md:-right-6 w-10 h-10 bg-bronze hover:bg-white hover:text-bronze transition-colors rounded-full flex items-center justify-center text-white shadow-lg border border-transparent hover:border-bronze">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://webhook.sellflux.app/v2/script_game.js/31f803b04fef48f630aad90bc8a48d78"></script>
+</body>
+
+</html>
