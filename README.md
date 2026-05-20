@@ -1,7 +1,3 @@
-Aqui está uma sugestão de `README.md` estruturada e profissional, focada em ser amigável e clara para o seu cliente. Ela explica o que é o projeto, quais tecnologias foram usadas e como ele pode fazer edições básicas no futuro.
-
----
-
 # Maruwá Villas - Landing Page Premium 🌴
 
 Bem-vindo(a) ao repositório oficial da Landing Page **Maruwá Villas**. Este projeto foi desenvolvido com foco em alta performance, design sofisticado (Luxo/Boutique) e conversão, proporcionando uma experiência imersiva e de alto padrão para os usuários.
